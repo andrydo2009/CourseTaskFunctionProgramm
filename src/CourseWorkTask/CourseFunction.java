@@ -1,5 +1,7 @@
 package CourseWorkTask;
+
 import java.util.*;
+
 public class CourseFunction {
 
 
@@ -42,12 +44,14 @@ public class CourseFunction {
 
     public static void main(String[] args) {
 
-        String testString = "За свою карьеру я пропустил более 9000 бросков, проиграл почти 300 игр. " +
-                "26 раз мне доверяли сделать финальный победный бросок, и я промахивался. " +
-                "Я терпел поражения снова, и снова, и снова. И именно поэтому я добился успеха.";
+    /* String testString = "За свою карьеру я пропустил более 9000 бросков, проиграл почти 300 игр.
+    26 раз мне доверяли сделать финальный победный бросок, и я промахивался.
+    Я терпел поражения снова, и снова, и снова. И именно поэтому я добился успеха."*/
 
+        Scanner scanner = new Scanner ( System.in );
+        System.out.print ( "Введите строку: " );
+        String testString = scanner.nextLine ();
         dividerWords ( testString );
-
         searchWords ( testString );
 
 
