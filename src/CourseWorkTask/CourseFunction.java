@@ -35,7 +35,9 @@ public class CourseFunction {
         System.out.println ( "TOP слов: " );
         map.entrySet ().stream ()
                 .sorted ( Map.Entry.comparingByValue ( Comparator.reverseOrder () ) )
-                .forEach ( System.out::println );
+                .forEach ( stringIntegerEntry -> {
+                    System.out.println ( stringIntegerEntry.getKey () + " - " + stringIntegerEntry.getValue () );
+                } );
     }
 
     public static void main(String[] args) {
@@ -51,3 +53,5 @@ public class CourseFunction {
 
     }
 }
+
+// end
