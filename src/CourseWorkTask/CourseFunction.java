@@ -30,10 +30,7 @@ public class CourseFunction {
         System.out.println ( "TOP слов: " );
         map.entrySet ().stream ()
                 .sorted (Map.Entry.comparingByValue ( Comparator.reverseOrder () ) )
-                    .forEach ( stringIntegerEntry -> {
-
-                    System.out.println ( stringIntegerEntry.getKey () + " - " + stringIntegerEntry.getValue () );
-                } );
+                    .forEach ( stringIntegerEntry -> System.out.println ( stringIntegerEntry.getKey () + " - " + stringIntegerEntry.getValue () ) );
 
 
     }
